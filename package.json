@@ -50,6 +50,9 @@
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "chai": "^4.3.6",
     "ethers": "^5.5.4",
-    "hardhat": "^2.10.1"
-  }
+    "hardhat": "^2.10.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-rc.1"
+  },
+  "prettier": "@aaronjan98/solidity-prettier-conf"
 }
