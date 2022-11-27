@@ -1,14 +1,14 @@
 async function main() {
   // Fetch contract to deploy
-  const Token = await ethers.getContractFactory("Token");
+  const Token = await ethers.getContractFactory('Token')
 
   // Deploy Contract
-  const token = await Token.deploy();
-  await token.deployed();
-  console.log(`Token Deployed to: ${token.address}`);
+  const token = await Token.deploy('Phi Token', 'PHI', '1000000')
+  await token.deployed()
+  console.log(`Token Deployed to: ${token.address}`)
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main().catch(error => {
+  console.error(error)
+  process.exitCode = 1
+})
